@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=yes">
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> acf8accb5c7e79ff8c5fc9df4321c9d470331496
+    <title>Perhitungan Togel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-image: url('bg.jpg');
+            background-size: cover; /* Atur agar gambar latar belakang menutupi seluruh elemen body */
+            background-position: center; /* Atur agar gambar latar belakang berada di tengah-tengah */
+            background-repeat: no-repeat;
+<<<<<<< HEAD
+            color: #ffffff; /* Warna teks agar terlihat baik di atas gambar latar belakang */
+=======
+>>>>>>> acf8accb5c7e79ff8c5fc9df4321c9d470331496
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: #baa809;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1{
+            color: white;
+        }
+
+        /* Tambahkan aturan media query untuk responsif */
+<<<<<<< HEAD
+        @media screen and (max-width: 1600px) {
+=======
+        @media screen and (max-width: 600px) {
+>>>>>>> acf8accb5c7e79ff8c5fc9df4321c9d470331496
+            button {
+                width: 100%; /* Tombol akan mengisi lebar penuh */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Perhitungan Togel</h1>
+
+    <button onclick="generateTogelNumber(2)">Generate Nomor Togel (2 Digit)</button>
+    <button onclick="generateTogelNumber(3)">Generate Nomor Togel (3 Digit)</button>
+    <button onclick="generateTogelNumber(4)">Generate Nomor Togel (4 Digit)</button>
+
+    <div id="result">Hasil: </div>
+
+    <script>
+        function generateRandomDigit() {
+            return Math.floor(Math.random() * 10);
+        }
+
+        function generateRandomTogelNumber(length) {
+            const togelNumber = [];
+            for (let i = 0; i < length; i++) {
+                togelNumber.push(generateRandomDigit());
+            }
+            return togelNumber.join('');
+        }
+
+        function generate2DTogelNumber() {
+            const length = 2;
+            return generateRandomTogelNumber(length);
+        }
+
+        function generate3DTogelNumber() {
+            const length = 3;
+            return generateRandomTogelNumber(length);
+        }
+
+        function generate4DTogelNumber() {
+            const length = 4;
+            return generateRandomTogelNumber(length);
+        }
+
+        function generateTogelNumber(length) {
+            const resultElement = document.getElementById('result');
+            const togelNumber = generateRandomTogelNumber(length);
+            resultElement.textContent = 'Hasil: ' + togelNumber;
+        }
+    </script>
+
+</body>
+</html>
